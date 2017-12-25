@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\FakeModel.cs" />
     <Compile Include="Presenters\IMainPresenter.cs" />
     <Compile Include="Presenters\IOperationPresenter.cs" />
     <Compile Include="Presenters\IPositionPresenter.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Presenters\OperationPresenter.cs" />
     <Compile Include="Presenters\PositionPresenter.cs" />
     <Compile Include="Presenters\SetupPresenter.cs" />
+    <Compile Include="Services\FakeService.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\IOperationView.cs" />
     <Compile Include="Views\IPositionView.cs" />
@@ -129,9 +131,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

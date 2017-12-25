@@ -1,5 +1,4 @@
-﻿using System.Windows.Forms;
-using MetroFramework.Controls;
+﻿using MetroFramework.Controls;
 using MVPDemo.Presenters;
 
 namespace MVPDemo.Views
