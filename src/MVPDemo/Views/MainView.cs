@@ -11,7 +11,6 @@ namespace MVPDemo.Views
 
         public ISubView SubView
         {
-            get => MainPanel.Controls.Count > 0 ? MainPanel.Controls[ 0 ] as ISubView : default( ISubView );
             set
             {
                 MainPanel.Controls.Clear( );

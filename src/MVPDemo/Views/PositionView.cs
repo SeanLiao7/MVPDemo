@@ -8,10 +8,16 @@ namespace MVPDemo.Views
     {
         private readonly IPositionPresenter _positionPresenter;
 
+        public bool IsEnable
+        {
+            get => this.getUiProperty( ( ) => Enabled );
+            set => this.updateUi( ( ) => Enabled = value );
+        }
+
         public string LearnResult
         {
-            get => txtResult.Text;
-            set => txtResult.Text = value;
+            get => txtResult.getUiProperty( ( ) => txtResult.Text );
+            set => txtResult.updateUi( ( ) => txtResult.Text = value );
         }
 
         public PositionView( IPositionPresenter positionPresenter )

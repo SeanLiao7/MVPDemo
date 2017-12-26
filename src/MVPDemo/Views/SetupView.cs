@@ -8,10 +8,16 @@ namespace MVPDemo.Views
     {
         private readonly ISetupPresenter _setupPresenter;
 
+        public bool IsEnable
+        {
+            get => this.getUiProperty( ( ) => Enabled );
+            set => this.updateUi( ( ) => Enabled = value );
+        }
+
         public string Result
         {
-            get => txtCounter.Text;
-            set => txtCounter.Text = value;
+            get => txtCounter.getUiProperty( ( ) => txtCounter.Text );
+            set => txtCounter.updateUi( ( ) => txtCounter.Text = value );
         }
 
         public SetupView( ISetupPresenter setupPresenter )

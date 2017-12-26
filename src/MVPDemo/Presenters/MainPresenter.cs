@@ -24,9 +24,11 @@ namespace MVPDemo.Presenters
 
         public void changeSubView( ViewType viewType )
         {
-            _mainView.SubView?.reloadViewContent( );
-            _mainView.SubView = _viewTable.TryGetValue( viewType, out var subView )
+            var view = _viewTable.TryGetValue( viewType, out var subView )
                 ? subView : throw new KeyNotFoundException( $"Can't find subView by {viewType}." );
+
+            view.reloadViewContent( );
+            _mainView.SubView = subView;
         }
 
         public void exit( )

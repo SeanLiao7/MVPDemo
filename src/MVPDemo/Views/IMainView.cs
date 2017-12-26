@@ -2,6 +2,6 @@
 {
     public interface IMainView
     {
-        ISubView SubView { get; set; }
+        ISubView SubView { set; }
     }
 }

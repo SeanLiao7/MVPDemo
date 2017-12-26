@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using MVPDemo.Views;
 
 namespace MVPDemo.Presenters
@@ -26,9 +28,21 @@ namespace MVPDemo.Presenters
             PositionView.LearnResult = result.ToString( );
         }
 
-        public void reloadContent( )
+        public async void reloadContent( )
         {
-            PositionView.LearnResult = "";
+            PositionView.IsEnable = false;
+            await doSomeJob( );
+            PositionView.IsEnable = true;
+        }
+
+        private Task doSomeJob( )
+        {
+            return Task.Run( ( ) =>
+            {
+                Thread.Sleep( 1000 );
+                var x = PositionView.LearnResult;
+                PositionView.LearnResult = "";
+            } );
         }
     }
 }
