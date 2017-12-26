@@ -35,38 +35,42 @@
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(386, 168);
+            this.txtResult.Location = new System.Drawing.Point(290, 101);
+            this.txtResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(303, 28);
+            this.txtResult.Size = new System.Drawing.Size(228, 22);
             this.txtResult.TabIndex = 0;
             // 
             // btnLearn
             // 
-            this.btnLearn.Location = new System.Drawing.Point(735, 161);
+            this.btnLearn.Location = new System.Drawing.Point(551, 97);
+            this.btnLearn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLearn.Name = "btnLearn";
-            this.btnLearn.Size = new System.Drawing.Size(121, 35);
+            this.btnLearn.Size = new System.Drawing.Size(91, 21);
             this.btnLearn.TabIndex = 1;
             this.btnLearn.Text = "Learn";
             this.btnLearn.UseVisualStyleBackColor = true;
             // 
             // btnGoSetupView
             // 
-            this.btnGoSetupView.Location = new System.Drawing.Point(1064, 597);
+            this.btnGoSetupView.Location = new System.Drawing.Point(1141, 684);
+            this.btnGoSetupView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGoSetupView.Name = "btnGoSetupView";
-            this.btnGoSetupView.Size = new System.Drawing.Size(241, 172);
+            this.btnGoSetupView.Size = new System.Drawing.Size(181, 103);
             this.btnGoSetupView.TabIndex = 2;
             this.btnGoSetupView.Text = "GoSetupView";
             this.btnGoSetupView.UseVisualStyleBackColor = true;
             // 
             // PositionView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnGoSetupView);
             this.Controls.Add(this.btnLearn);
             this.Controls.Add(this.txtResult);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PositionView";
-            this.Size = new System.Drawing.Size(1400, 820);
+            this.Size = new System.Drawing.Size(1410, 829);
             this.ResumeLayout(false);
             this.PerformLayout();
 

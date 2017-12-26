@@ -36,48 +36,53 @@
             // 
             // btnGoSetupView
             // 
-            this.btnGoSetupView.Location = new System.Drawing.Point(822, 600);
+            this.btnGoSetupView.Location = new System.Drawing.Point(853, 679);
+            this.btnGoSetupView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGoSetupView.Name = "btnGoSetupView";
-            this.btnGoSetupView.Size = new System.Drawing.Size(241, 172);
+            this.btnGoSetupView.Size = new System.Drawing.Size(181, 103);
             this.btnGoSetupView.TabIndex = 1;
             this.btnGoSetupView.Text = "GoSetupView";
             this.btnGoSetupView.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1121, 600);
+            this.btnExit.Location = new System.Drawing.Point(1096, 679);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(241, 172);
+            this.btnExit.Size = new System.Drawing.Size(181, 103);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // btnReceiveProgramResult
             // 
-            this.btnReceiveProgramResult.Location = new System.Drawing.Point(712, 208);
+            this.btnReceiveProgramResult.Location = new System.Drawing.Point(534, 125);
+            this.btnReceiveProgramResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReceiveProgramResult.Name = "btnReceiveProgramResult";
-            this.btnReceiveProgramResult.Size = new System.Drawing.Size(121, 35);
+            this.btnReceiveProgramResult.Size = new System.Drawing.Size(91, 21);
             this.btnReceiveProgramResult.TabIndex = 4;
             this.btnReceiveProgramResult.Text = "Program";
             this.btnReceiveProgramResult.UseVisualStyleBackColor = true;
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(363, 215);
+            this.txtResult.Location = new System.Drawing.Point(272, 129);
+            this.txtResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(303, 28);
+            this.txtResult.Size = new System.Drawing.Size(228, 22);
             this.txtResult.TabIndex = 3;
             // 
             // OperartionView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnReceiveProgramResult);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnGoSetupView);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OperartionView";
-            this.Size = new System.Drawing.Size(1400, 820);
+            this.Size = new System.Drawing.Size(1410, 829);
             this.ResumeLayout(false);
             this.PerformLayout();
 

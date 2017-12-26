@@ -33,23 +33,25 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(20, 60);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MainPanel.Location = new System.Drawing.Point(15, 59);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1400, 820);
+            this.MainPanel.Size = new System.Drawing.Size(1410, 829);
             this.MainPanel.TabIndex = 0;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 900);
             this.ControlBox = false;
             this.Controls.Add(this.MainPanel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainView";
+            this.Padding = new System.Windows.Forms.Padding(15, 36, 15, 12);
             this.Resizable = false;
-            this.Text = "MainView";
+            this.Text = "MVP Demo";
             this.ResumeLayout(false);
 
         }
