@@ -9,5 +9,7 @@
         void goOperationView( );
 
         void goPositionView( );
+
+        void reloadContent( );
     }
 }

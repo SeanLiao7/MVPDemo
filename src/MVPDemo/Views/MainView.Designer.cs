@@ -44,12 +44,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1440, 900);
             this.ControlBox = false;
             this.Controls.Add(this.MainPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Movable = false;
             this.Name = "MainView";
-            this.Padding = new System.Windows.Forms.Padding(15, 36, 15, 12);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 12);
             this.Resizable = false;
             this.Text = "MVP Demo";
             this.ResumeLayout(false);

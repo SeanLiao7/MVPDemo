@@ -7,5 +7,7 @@
         void goSetupView( );
 
         void receiveProgramResult( );
+
+        void reloadContent( );
     }
 }

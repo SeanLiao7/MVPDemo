@@ -30,5 +30,10 @@ namespace MVPDemo.Presenters
             var result = rnd.Next( 2 ) > 0;
             _operartionView.ProgramResult = result.ToString( );
         }
+
+        public void reloadContent( )
+        {
+            _operartionView.ProgramResult = "";
+        }
     }
 }

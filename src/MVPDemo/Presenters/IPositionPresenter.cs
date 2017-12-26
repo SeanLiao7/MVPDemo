@@ -5,5 +5,7 @@
         void goSetupView( );
 
         void learn( );
+
+        void reloadContent( );
     }
 }

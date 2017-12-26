@@ -2,5 +2,6 @@
 {
     public interface ISubView
     {
+        void reloadViewContent( );
     }
 }

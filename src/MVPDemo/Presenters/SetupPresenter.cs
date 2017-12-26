@@ -35,5 +35,10 @@ namespace MVPDemo.Presenters
         {
             _mainPresenter.changeSubView( ViewType.Position );
         }
+
+        public void reloadContent( )
+        {
+            _setupView.Result = "";
+        }
     }
 }

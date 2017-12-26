@@ -1,4 +1,5 @@
-﻿using MetroFramework.Controls;
+﻿using System;
+using MetroFramework.Controls;
 using MVPDemo.Presenters;
 
 namespace MVPDemo.Views
@@ -23,22 +24,27 @@ namespace MVPDemo.Views
             btnExit.Click += btnExit_Click;
         }
 
-        private void btnAddCounter_Click( object sender, System.EventArgs e )
+        public void reloadViewContent( )
+        {
+            _setupPresenter.reloadContent( );
+        }
+
+        private void btnAddCounter_Click( object sender, EventArgs e )
         {
             _setupPresenter.addCounter( );
         }
 
-        private void btnExit_Click( object sender, System.EventArgs e )
+        private void btnExit_Click( object sender, EventArgs e )
         {
             _setupPresenter.exit( );
         }
 
-        private void btnGoOperationView_Click( object sender, System.EventArgs e )
+        private void btnGoOperationView_Click( object sender, EventArgs e )
         {
             _setupPresenter.goOperationView( );
         }
 
-        private void btnGoPosition_Click( object sender, System.EventArgs e )
+        private void btnGoPosition_Click( object sender, EventArgs e )
         {
             _setupPresenter.goPositionView( );
         }

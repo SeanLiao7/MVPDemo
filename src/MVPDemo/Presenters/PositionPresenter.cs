@@ -25,5 +25,10 @@ namespace MVPDemo.Presenters
             var result = rnd.Next( 2 ) > 0;
             _positionView.LearnResult = result.ToString( );
         }
+
+        public void reloadContent( )
+        {
+            _positionView.LearnResult = "";
+        }
     }
 }

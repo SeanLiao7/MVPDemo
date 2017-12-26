@@ -1,4 +1,5 @@
-﻿using MetroFramework.Controls;
+﻿using System;
+using MetroFramework.Controls;
 using MVPDemo.Presenters;
 
 namespace MVPDemo.Views
@@ -21,12 +22,17 @@ namespace MVPDemo.Views
             btnGoSetupView.Click += btnGoSetupView_Click;
         }
 
-        private void btnGoSetupView_Click( object sender, System.EventArgs e )
+        public void reloadViewContent( )
+        {
+            _positionPresenter.reloadContent( );
+        }
+
+        private void btnGoSetupView_Click( object sender, EventArgs e )
         {
             _positionPresenter.goSetupView( );
         }
 
-        private void btnLearn_Click( object sender, System.EventArgs e )
+        private void btnLearn_Click( object sender, EventArgs e )
         {
             _positionPresenter.learn( );
         }

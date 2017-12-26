@@ -35,7 +35,7 @@
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(290, 101);
+            this.txtResult.Location = new System.Drawing.Point(66, 2);
             this.txtResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(228, 22);
@@ -43,7 +43,7 @@
             // 
             // btnLearn
             // 
-            this.btnLearn.Location = new System.Drawing.Point(551, 97);
+            this.btnLearn.Location = new System.Drawing.Point(298, 3);
             this.btnLearn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLearn.Name = "btnLearn";
             this.btnLearn.Size = new System.Drawing.Size(91, 21);
