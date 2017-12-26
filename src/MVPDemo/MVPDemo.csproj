@@ -60,6 +60,7 @@
     <Compile Include="Presenters\IOperationPresenter.cs" />
     <Compile Include="Presenters\IPositionPresenter.cs" />
     <Compile Include="Presenters\ISetupPresenter.cs" />
+    <Compile Include="Presenters\ISubPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Presenters\OperationPresenter.cs" />
     <Compile Include="Presenters\PositionPresenter.cs" />

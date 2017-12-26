@@ -14,10 +14,11 @@ namespace MVPDemo.Views
             set => txtResult.Text = value;
         }
 
-        public PositionView( IMainPresenter mainPresenter )
+        public PositionView( IPositionPresenter positionPresenter )
         {
             InitializeComponent( );
-            _positionPresenter = new PositionPresenter( this, mainPresenter );
+            positionPresenter.PositionView = this;
+            _positionPresenter = positionPresenter;
             btnLearn.Click += btnLearn_Click;
             btnGoSetupView.Click += btnGoSetupView_Click;
         }

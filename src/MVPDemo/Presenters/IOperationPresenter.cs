@@ -1,13 +1,15 @@
-﻿namespace MVPDemo.Presenters
+﻿using MVPDemo.Views;
+
+namespace MVPDemo.Presenters
 {
-    public interface IOperationPresenter
+    public interface IOperationPresenter : ISubPresenter
     {
+        IOperationView OperationView { get; set; }
+
         void exit( );
 
         void goSetupView( );
 
         void receiveProgramResult( );
-
-        void reloadContent( );
     }
 }

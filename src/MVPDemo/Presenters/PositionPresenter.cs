@@ -6,11 +6,11 @@ namespace MVPDemo.Presenters
     public class PositionPresenter : IPositionPresenter
     {
         private readonly IMainPresenter _mainPresenter;
-        private readonly IPositionView _positionView;
 
-        public PositionPresenter( IPositionView positionView, IMainPresenter mainPresenter )
+        public IPositionView PositionView { get; set; }
+
+        public PositionPresenter( IMainPresenter mainPresenter )
         {
-            _positionView = positionView;
             _mainPresenter = mainPresenter;
         }
 
@@ -23,12 +23,12 @@ namespace MVPDemo.Presenters
         {
             var rnd = new Random( );
             var result = rnd.Next( 2 ) > 0;
-            _positionView.LearnResult = result.ToString( );
+            PositionView.LearnResult = result.ToString( );
         }
 
         public void reloadContent( )
         {
-            _positionView.LearnResult = "";
+            PositionView.LearnResult = "";
         }
     }
 }

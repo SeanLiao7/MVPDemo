@@ -15,9 +15,9 @@ namespace MVPDemo.Presenters
             _mainView = mainView;
             _viewTable = new Dictionary<ViewType, ISubView>
             {
-                { ViewType.Setup, new SetupView( this ) },
-                { ViewType.Position, new PositionView( this ) },
-                { ViewType.Operation, new OperartionView( this ) },
+                { ViewType.Setup, new SetupView( new SetupPresenter( this ) ) },
+                { ViewType.Position, new PositionView( new PositionPresenter( this ) ) },
+                { ViewType.Operation, new OperartionView( new OperationPresenter( this ) ) },
             };
             changeSubView( ViewType.Setup );
         }

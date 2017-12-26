@@ -6,11 +6,11 @@ namespace MVPDemo.Presenters
     public class OperationPresenter : IOperationPresenter
     {
         private readonly IMainPresenter _mainPresenter;
-        private readonly IOperationView _operartionView;
 
-        public OperationPresenter( IOperationView operartionView, IMainPresenter mainPresenter )
+        public IOperationView OperationView { get; set; }
+
+        public OperationPresenter( IMainPresenter mainPresenter )
         {
-            _operartionView = operartionView;
             _mainPresenter = mainPresenter;
         }
 
@@ -28,12 +28,12 @@ namespace MVPDemo.Presenters
         {
             var rnd = new Random( );
             var result = rnd.Next( 2 ) > 0;
-            _operartionView.ProgramResult = result.ToString( );
+            OperationView.ProgramResult = result.ToString( );
         }
 
         public void reloadContent( )
         {
-            _operartionView.ProgramResult = "";
+            OperationView.ProgramResult = "";
         }
     }
 }

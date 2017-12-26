@@ -14,10 +14,11 @@ namespace MVPDemo.Views
             set => txtCounter.Text = value;
         }
 
-        public SetupView( IMainPresenter mainPresenter )
+        public SetupView( ISetupPresenter setupPresenter )
         {
             InitializeComponent( );
-            _setupPresenter = new SetupPresenter( this, mainPresenter );
+            setupPresenter.SetupView = this;
+            _setupPresenter = setupPresenter;
             btnGoPosition.Click += btnGoPosition_Click;
             btnAddCounter.Click += btnAddCounter_Click;
             btnGoOperationView.Click += btnGoOperationView_Click;

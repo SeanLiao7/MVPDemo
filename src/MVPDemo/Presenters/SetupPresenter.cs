@@ -6,11 +6,11 @@ namespace MVPDemo.Presenters
     public class SetupPresenter : ISetupPresenter
     {
         private readonly IMainPresenter _mainPresenter;
-        private readonly ISetupView _setupView;
 
-        public SetupPresenter( ISetupView setupView, IMainPresenter mainPresenter )
+        public ISetupView SetupView { get; set; }
+
+        public SetupPresenter( IMainPresenter mainPresenter )
         {
-            _setupView = setupView;
             _mainPresenter = mainPresenter;
         }
 
@@ -18,7 +18,7 @@ namespace MVPDemo.Presenters
         {
             var x = new Random( );
             var result = x.Next( 100 );
-            _setupView.Result = result.ToString( );
+            SetupView.Result = result.ToString( );
         }
 
         public void exit( )
@@ -38,7 +38,7 @@ namespace MVPDemo.Presenters
 
         public void reloadContent( )
         {
-            _setupView.Result = "";
+            SetupView.Result = "";
         }
     }
 }

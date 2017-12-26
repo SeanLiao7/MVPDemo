@@ -14,10 +14,11 @@ namespace MVPDemo.Views
             set => txtResult.Text = value;
         }
 
-        public OperartionView( IMainPresenter mainPresenter )
+        public OperartionView( IOperationPresenter operationPresenter )
         {
             InitializeComponent( );
-            _operationPresenter = new OperationPresenter( this, mainPresenter );
+            operationPresenter.OperationView = this;
+            _operationPresenter = operationPresenter;
             btnReceiveProgramResult.Click += btnReceiveProgramResult_Click;
             btnGoSetupView.Click += btnGoSetupView_Click;
             btnExit.Click += btnExit_Click;
