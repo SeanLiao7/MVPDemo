@@ -37,59 +37,64 @@
             // 
             // btnGoPosition
             // 
-            this.btnGoPosition.Location = new System.Drawing.Point(525, 590);
+            this.btnGoPosition.Location = new System.Drawing.Point(610, 624);
+            this.btnGoPosition.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoPosition.Name = "btnGoPosition";
-            this.btnGoPosition.Size = new System.Drawing.Size(241, 172);
+            this.btnGoPosition.Size = new System.Drawing.Size(181, 103);
             this.btnGoPosition.TabIndex = 0;
             this.btnGoPosition.Text = "goPositionView";
             this.btnGoPosition.UseVisualStyleBackColor = true;
             // 
             // txtCounter
             // 
-            this.txtCounter.Location = new System.Drawing.Point(252, 193);
+            this.txtCounter.Location = new System.Drawing.Point(184, 309);
+            this.txtCounter.Margin = new System.Windows.Forms.Padding(2);
             this.txtCounter.Name = "txtCounter";
-            this.txtCounter.Size = new System.Drawing.Size(364, 28);
+            this.txtCounter.Size = new System.Drawing.Size(274, 22);
             this.txtCounter.TabIndex = 1;
             // 
             // btnAddCounter
             // 
-            this.btnAddCounter.Location = new System.Drawing.Point(645, 183);
+            this.btnAddCounter.Location = new System.Drawing.Point(513, 309);
+            this.btnAddCounter.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCounter.Name = "btnAddCounter";
-            this.btnAddCounter.Size = new System.Drawing.Size(156, 47);
+            this.btnAddCounter.Size = new System.Drawing.Size(117, 28);
             this.btnAddCounter.TabIndex = 2;
             this.btnAddCounter.Text = "Add";
             this.btnAddCounter.UseVisualStyleBackColor = true;
             // 
             // btnGoOperationView
             // 
-            this.btnGoOperationView.Location = new System.Drawing.Point(818, 590);
+            this.btnGoOperationView.Location = new System.Drawing.Point(870, 624);
+            this.btnGoOperationView.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoOperationView.Name = "btnGoOperationView";
-            this.btnGoOperationView.Size = new System.Drawing.Size(241, 172);
+            this.btnGoOperationView.Size = new System.Drawing.Size(181, 103);
             this.btnGoOperationView.TabIndex = 3;
             this.btnGoOperationView.Text = "goOperationView";
             this.btnGoOperationView.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1101, 590);
+            this.btnExit.Location = new System.Drawing.Point(1104, 624);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(241, 172);
+            this.btnExit.Size = new System.Drawing.Size(181, 103);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // SetupView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnGoOperationView);
             this.Controls.Add(this.btnAddCounter);
             this.Controls.Add(this.txtCounter);
             this.Controls.Add(this.btnGoPosition);
-            this.MaximumSize = new System.Drawing.Size(1400, 800);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(1400, 820);
             this.Name = "SetupView";
-            this.Size = new System.Drawing.Size(1400, 800);
+            this.Size = new System.Drawing.Size(1400, 820);
             this.ResumeLayout(false);
             this.PerformLayout();
 
