@@ -37,6 +37,7 @@
             // 
             // btnGoPosition
             // 
+            this.btnGoPosition.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGoPosition.Location = new System.Drawing.Point(610, 624);
             this.btnGoPosition.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoPosition.Name = "btnGoPosition";
@@ -50,11 +51,12 @@
             this.txtCounter.Location = new System.Drawing.Point(184, 309);
             this.txtCounter.Margin = new System.Windows.Forms.Padding(2);
             this.txtCounter.Name = "txtCounter";
-            this.txtCounter.Size = new System.Drawing.Size(274, 22);
+            this.txtCounter.Size = new System.Drawing.Size(274, 28);
             this.txtCounter.TabIndex = 1;
             // 
             // btnAddCounter
             // 
+            this.btnAddCounter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAddCounter.Location = new System.Drawing.Point(513, 309);
             this.btnAddCounter.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCounter.Name = "btnAddCounter";
@@ -65,6 +67,7 @@
             // 
             // btnGoOperationView
             // 
+            this.btnGoOperationView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGoOperationView.Location = new System.Drawing.Point(870, 624);
             this.btnGoOperationView.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoOperationView.Name = "btnGoOperationView";
@@ -75,6 +78,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExit.Location = new System.Drawing.Point(1104, 624);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";

@@ -1,7 +1,9 @@
-﻿namespace MVPDemo.Presenters
+﻿using System.Threading.Tasks;
+
+namespace MVPDemo.Presenters
 {
     public interface ISubPresenter
     {
-        void reloadContent( );
+        Task reloadContent( );
     }
 }

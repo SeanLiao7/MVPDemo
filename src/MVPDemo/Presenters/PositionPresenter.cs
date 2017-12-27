@@ -28,11 +28,9 @@ namespace MVPDemo.Presenters
             PositionView.LearnResult = result.ToString( );
         }
 
-        public async void reloadContent( )
+        public Task reloadContent( )
         {
-            PositionView.IsEnable = false;
-            await doSomeJob( );
-            PositionView.IsEnable = true;
+            return doSomeJob( );
         }
 
         private Task doSomeJob( )

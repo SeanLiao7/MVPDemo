@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MetroFramework.Controls;
 using MVPDemo.Presenters;
 
@@ -31,9 +32,9 @@ namespace MVPDemo.Views
             btnExit.Click += btnExit_Click;
         }
 
-        public void reloadViewContent( )
+        public Task reloadViewContent( )
         {
-            _setupPresenter.reloadContent( );
+            return _setupPresenter.reloadContent( );
         }
 
         private void btnAddCounter_Click( object sender, EventArgs e )

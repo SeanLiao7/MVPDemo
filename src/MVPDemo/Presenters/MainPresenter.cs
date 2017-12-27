@@ -22,13 +22,16 @@ namespace MVPDemo.Presenters
             changeSubView( ViewType.Setup );
         }
 
-        public void changeSubView( ViewType viewType )
+        public async void changeSubView( ViewType viewType )
         {
+            var currenView = _mainView.SubView;
+            if ( currenView != null )
+                currenView.IsEnable = false;
             var view = _viewTable.TryGetValue( viewType, out var subView )
                 ? subView : throw new KeyNotFoundException( $"Can't find subView by {viewType}." );
-
-            view.reloadViewContent( );
-            _mainView.SubView = subView;
+            await view.reloadViewContent( );
+            view.IsEnable = true;
+            _mainView.SubView = view;
         }
 
         public void exit( )

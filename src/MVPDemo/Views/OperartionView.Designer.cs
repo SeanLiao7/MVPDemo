@@ -36,8 +36,9 @@
             // 
             // btnGoSetupView
             // 
-            this.btnGoSetupView.Location = new System.Drawing.Point(843, 596);
-            this.btnGoSetupView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoSetupView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGoSetupView.Location = new System.Drawing.Point(846, 606);
+            this.btnGoSetupView.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoSetupView.Name = "btnGoSetupView";
             this.btnGoSetupView.Size = new System.Drawing.Size(181, 103);
             this.btnGoSetupView.TabIndex = 1;
@@ -46,8 +47,9 @@
             // 
             // btnExit
             // 
+            this.btnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExit.Location = new System.Drawing.Point(1078, 606);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(181, 103);
             this.btnExit.TabIndex = 2;
@@ -56,10 +58,11 @@
             // 
             // btnReceiveProgramResult
             // 
+            this.btnReceiveProgramResult.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnReceiveProgramResult.Location = new System.Drawing.Point(602, 272);
-            this.btnReceiveProgramResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReceiveProgramResult.Margin = new System.Windows.Forms.Padding(2);
             this.btnReceiveProgramResult.Name = "btnReceiveProgramResult";
-            this.btnReceiveProgramResult.Size = new System.Drawing.Size(91, 21);
+            this.btnReceiveProgramResult.Size = new System.Drawing.Size(91, 32);
             this.btnReceiveProgramResult.TabIndex = 4;
             this.btnReceiveProgramResult.Text = "Program";
             this.btnReceiveProgramResult.UseVisualStyleBackColor = true;
@@ -67,19 +70,20 @@
             // txtResult
             // 
             this.txtResult.Location = new System.Drawing.Point(340, 276);
-            this.txtResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtResult.Margin = new System.Windows.Forms.Padding(2);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(228, 22);
+            this.txtResult.Size = new System.Drawing.Size(228, 28);
             this.txtResult.TabIndex = 3;
             // 
             // OperartionView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.btnReceiveProgramResult);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnGoSetupView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1400, 820);
             this.Name = "OperartionView";
             this.Size = new System.Drawing.Size(1400, 820);

@@ -1,9 +1,11 @@
-﻿namespace MVPDemo.Views
+﻿using System.Threading.Tasks;
+
+namespace MVPDemo.Views
 {
     public interface ISubView
     {
         bool IsEnable { get; set; }
 
-        void reloadViewContent( );
+        Task reloadViewContent( );
     }
 }

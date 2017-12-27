@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MetroFramework.Controls;
 using MVPDemo.Presenters;
 
@@ -29,9 +30,9 @@ namespace MVPDemo.Views
             btnGoSetupView.Click += btnGoSetupView_Click;
         }
 
-        public void reloadViewContent( )
+        public Task reloadViewContent( )
         {
-            _positionPresenter.reloadContent( );
+            return _positionPresenter.reloadContent( );
         }
 
         private void btnGoSetupView_Click( object sender, EventArgs e )

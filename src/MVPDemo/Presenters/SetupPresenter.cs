@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MVPDemo.Views;
 
 namespace MVPDemo.Presenters
@@ -36,9 +37,9 @@ namespace MVPDemo.Presenters
             _mainPresenter.changeSubView( ViewType.Position );
         }
 
-        public void reloadContent( )
+        public Task reloadContent( )
         {
-            SetupView.Result = "";
+            return Task.Run( ( ) => SetupView.Result = "" );
         }
     }
 }

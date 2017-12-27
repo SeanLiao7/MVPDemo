@@ -7,10 +7,15 @@ namespace MVPDemo.Views
 {
     public partial class MainView : MetroForm, IMainView
     {
-        private readonly MainPresenter _mainPresenter;
+        private readonly IMainPresenter _mainPresenter;
 
         public ISubView SubView
         {
+            get => MainPanel.Controls.Count > 0
+                ? MainPanel.Controls[ 0 ] is ISubView view
+                    ? view
+                    : throw new InvalidCastException( $"Can't find relevant view, input name :{nameof( SubView )}" )
+                : default( ISubView );
             set
             {
                 MainPanel.Controls.Clear( );

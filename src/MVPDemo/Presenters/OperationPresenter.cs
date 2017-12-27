@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MVPDemo.Views;
 
 namespace MVPDemo.Presenters
@@ -31,9 +32,9 @@ namespace MVPDemo.Presenters
             OperationView.ProgramResult = result.ToString( );
         }
 
-        public void reloadContent( )
+        public Task reloadContent( )
         {
-            OperationView.ProgramResult = "";
+            return Task.Run( ( ) => OperationView.ProgramResult = "" );
         }
     }
 }
