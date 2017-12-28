@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using MVPDemo.Views;
 
@@ -39,7 +40,12 @@ namespace MVPDemo.Presenters
 
         public Task reloadContent( )
         {
-            return Task.Run( ( ) => SetupView.Result = "" );
+            return Task.Run( ( ) =>
+                {
+                    Thread.Sleep( 2000 );
+                    SetupView.Result = "";
+                }
+            );
         }
     }
 }

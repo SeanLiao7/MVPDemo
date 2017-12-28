@@ -14,7 +14,7 @@ namespace MVPDemo.Views
             get => MainPanel.Controls.Count > 0
                 ? MainPanel.Controls[ 0 ] is ISubView view
                     ? view
-                    : throw new InvalidCastException( $"Can't find relevant view, input name :{nameof( SubView )}" )
+                    : throw new InvalidCastException( $"Can't find relevant view, property name :{nameof( SubView )}" )
                 : default( ISubView );
             set
             {
