@@ -11,14 +11,14 @@ namespace MVPDemo.Views
 
         public bool IsEnable
         {
-            get => this.getUiProperty( ( ) => Enabled );
-            set => this.updateUi( ( ) => Enabled = value );
+            get => this.getUiProperty( x => x.Enabled );
+            set => this.updateUi( x => x.Enabled = value );
         }
 
         public string Result
         {
-            get => txtCounter.getUiProperty( ( ) => txtCounter.Text );
-            set => txtCounter.updateUi( ( ) => txtCounter.Text = value );
+            get => txtCounter.getUiProperty( x => x.Text );
+            set => txtCounter.updateUi( x => x.Text = value );
         }
 
         public SetupView( ISetupPresenter setupPresenter )

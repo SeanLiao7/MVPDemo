@@ -28,14 +28,14 @@ namespace MVPDemo.Views
 
         public FormBorderStyle ViewBorderStyle
         {
-            get => this.getUiProperty( ( ) => FormBorderStyle );
-            set => this.updateUi( ( ) => FormBorderStyle = value );
+            get => this.getUiProperty( x => x.FormBorderStyle );
+            set => this.updateUi( x => x.FormBorderStyle = value );
         }
 
         public FormWindowState ViewWindowState
         {
-            get => this.getUiProperty( ( ) => WindowState );
-            set => this.updateUi( ( ) => WindowState = value );
+            get => this.getUiProperty( x => x.WindowState );
+            set => this.updateUi( x => x.WindowState = value );
         }
 
         public MainView( IMainPresenter mainPresenter )

@@ -5,19 +5,21 @@ namespace MVPDemo
 {
     public static class Extensions
     {
-        public static T getUiProperty<T>( this Control control, Func<T> func )
+        public static TResult getUiProperty<TIn, TResult>( this TIn control, Func<TIn, TResult> func )
+            where TIn : Control
         {
             if ( control.InvokeRequired )
-                return ( T ) control.Invoke( new Func<T>( ( ) => control.getUiProperty( func ) ) );
-            return func( );
+                return ( TResult ) control.Invoke( new Func<TIn, TResult>( x => x.getUiProperty( func ) ), control );
+            return func( control );
         }
 
-        public static void updateUi( this Control control, Action action )
+        public static void updateUi<TIn>( this TIn control, Action<TIn> action )
+            where TIn : Control
         {
             if ( control.InvokeRequired )
-                control.Invoke( new Action( ( ) => control.updateUi( action ) ) );
+                control.Invoke( new Action<TIn>( x => x.updateUi( action ) ), control );
             else
-                action( );
+                action( control );
         }
     }
 }
