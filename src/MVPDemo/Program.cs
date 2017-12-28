@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MVPDemo.Presenters;
 using MVPDemo.Views;
 
 namespace MVPDemo
@@ -14,7 +15,7 @@ namespace MVPDemo
         {
             Application.EnableVisualStyles( );
             Application.SetCompatibleTextRenderingDefault( false );
-            Application.Run( new MainView( ) );
+            Application.Run( new MainView( new MainPresenter( ) ) );
         }
     }
 }

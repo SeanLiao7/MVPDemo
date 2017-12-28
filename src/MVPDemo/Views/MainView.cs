@@ -12,10 +12,10 @@ namespace MVPDemo.Views
         public ISubView SubView
         {
             get => MainPanel.Controls.Count > 0
-                ? MainPanel.Controls[ 0 ] is ISubView view
+                    ? MainPanel.Controls[ 0 ] is ISubView view
                     ? view
                     : throw new InvalidCastException( $"Can't find relevant view, property name :{nameof( SubView )}" )
-                : default( ISubView );
+                    : default( ISubView );
             set
             {
                 MainPanel.Controls.Clear( );
@@ -26,17 +26,29 @@ namespace MVPDemo.Views
             }
         }
 
-        public MainView( )
+        public FormBorderStyle ViewBorderStyle
         {
-            InitializeComponent( );
-            _mainPresenter = new MainPresenter( this );
+            get => this.getUiProperty( ( ) => FormBorderStyle );
+            set => this.updateUi( ( ) => FormBorderStyle = value );
         }
 
-        protected override void OnLoad( EventArgs e )
+        public FormWindowState ViewWindowState
         {
-            WindowState = FormWindowState.Normal;
-            FormBorderStyle = FormBorderStyle.None;
-            base.OnLoad( e );
+            get => this.getUiProperty( ( ) => WindowState );
+            set => this.updateUi( ( ) => WindowState = value );
+        }
+
+        public MainView( IMainPresenter mainPresenter )
+        {
+            InitializeComponent( );
+            mainPresenter.MainView = this;
+            _mainPresenter = mainPresenter;
+            Load += MainView_Load;
+        }
+
+        private void MainView_Load( object sender, EventArgs e )
+        {
+            _mainPresenter.loadView( );
         }
     }
 }
