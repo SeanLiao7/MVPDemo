@@ -30,9 +30,12 @@ namespace MVPDemo.Presenters
 
         public void loadView( )
         {
-            _viewTable.Add( ViewType.Setup, new SetupView( new SetupPresenter( this ) ) { StyleManager = MainView.StyleManager } );
-            _viewTable.Add( ViewType.Position, new PositionView( new PositionPresenter( this ) ) { StyleManager = MainView.StyleManager } );
-            _viewTable.Add( ViewType.Operation, new OperartionView( new OperationPresenter( this ) ) { StyleManager = MainView.StyleManager } );
+            _viewTable.Add( ViewType.Setup,
+                new SetupView( new SetupPresenter( this ) ) { StyleManager = MainView.StyleManager } );
+            _viewTable.Add( ViewType.Position,
+                new PositionView( new PositionPresenter( this ) ) { StyleManager = MainView.StyleManager } );
+            _viewTable.Add( ViewType.Operation,
+                new OperartionView( new OperationPresenter( this ) ) { StyleManager = MainView.StyleManager } );
 
             MainView.setMaximumSize( );
             changeSubView( ViewType.Setup );
