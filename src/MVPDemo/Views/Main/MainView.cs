@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MetroFramework;
 using MetroFramework.Forms;
 using MVPDemo.Presenters;
 
@@ -26,29 +27,40 @@ namespace MVPDemo.Views
             }
         }
 
-        public FormBorderStyle ViewBorderStyle
-        {
-            get => this.getUiProperty( x => x.FormBorderStyle );
-            set => this.updateUi( x => x.FormBorderStyle = value );
-        }
-
-        public FormWindowState ViewWindowState
-        {
-            get => this.getUiProperty( x => x.WindowState );
-            set => this.updateUi( x => x.WindowState = value );
-        }
+        public bool ToggleTheme => toggleTheme.getUiProperty( x => x.Checked );
 
         public MainView( IMainPresenter mainPresenter )
         {
             InitializeComponent( );
             mainPresenter.MainView = this;
             _mainPresenter = mainPresenter;
+            StyleManager = mainStyleManager;
             Load += MainView_Load;
+            toggleTheme.CheckedChanged += ToggleTheme_CheckedChanged;
+        }
+
+        public void setMaximumSize( )
+        {
+            this.updateUi( x =>
+            {
+                x.WindowState = FormWindowState.Normal;
+                x.FormBorderStyle = FormBorderStyle.None;
+            } );
+        }
+
+        public void updateTheme( MetroThemeStyle themeStyle )
+        {
+            this.updateUi( x => StyleManager.Theme = themeStyle );
         }
 
         private void MainView_Load( object sender, EventArgs e )
         {
             _mainPresenter.loadView( );
+        }
+
+        private void ToggleTheme_CheckedChanged( object sender, EventArgs e )
+        {
+            _mainPresenter.toggleTheme( );
         }
     }
 }

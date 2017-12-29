@@ -11,5 +11,7 @@ namespace MVPDemo.Presenters
         void exit( );
 
         void loadView( );
+
+        void toggleTheme( );
     }
 }

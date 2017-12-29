@@ -57,49 +57,49 @@
   <ItemGroup>
     <Compile Include="Extensions.cs" />
     <Compile Include="Models\FakeModel.cs" />
-    <Compile Include="Presenters\IMainPresenter.cs" />
-    <Compile Include="Presenters\IOperationPresenter.cs" />
-    <Compile Include="Presenters\IPositionPresenter.cs" />
-    <Compile Include="Presenters\ISetupPresenter.cs" />
+    <Compile Include="Presenters\Main\IMainPresenter.cs" />
+    <Compile Include="Presenters\Operation\IOperationPresenter.cs" />
+    <Compile Include="Presenters\Position\IPositionPresenter.cs" />
+    <Compile Include="Presenters\Setup\ISetupPresenter.cs" />
     <Compile Include="Presenters\ISubPresenter.cs" />
-    <Compile Include="Presenters\MainPresenter.cs" />
-    <Compile Include="Presenters\OperationPresenter.cs" />
-    <Compile Include="Presenters\PositionPresenter.cs" />
-    <Compile Include="Presenters\SetupPresenter.cs" />
+    <Compile Include="Presenters\Main\MainPresenter.cs" />
+    <Compile Include="Presenters\Operation\OperationPresenter.cs" />
+    <Compile Include="Presenters\Position\PositionPresenter.cs" />
+    <Compile Include="Presenters\Setup\SetupPresenter.cs" />
     <Compile Include="Services\FakeService.cs" />
-    <Compile Include="Views\IMainView.cs" />
-    <Compile Include="Views\IOperationView.cs" />
-    <Compile Include="Views\IPositionView.cs" />
-    <Compile Include="Views\ISetupView.cs" />
+    <Compile Include="Views\Main\IMainView.cs" />
+    <Compile Include="Views\Operation\IOperationView.cs" />
+    <Compile Include="Views\Position\IPositionView.cs" />
+    <Compile Include="Views\Setup\ISetupView.cs" />
     <Compile Include="Views\ISubView.cs" />
-    <Compile Include="Views\MainView.cs">
+    <Compile Include="Views\Main\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainView.Designer.cs">
+    <Compile Include="Views\Main\MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\OperartionView.cs">
+    <Compile Include="Views\Operation\OperartionView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\OperartionView.Designer.cs">
+    <Compile Include="Views\Operation\OperartionView.Designer.cs">
       <DependentUpon>OperartionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\PositionView.cs">
+    <Compile Include="Views\Position\PositionView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\PositionView.Designer.cs">
+    <Compile Include="Views\Position\PositionView.Designer.cs">
       <DependentUpon>PositionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SetupView.cs">
+    <Compile Include="Views\Setup\SetupView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SetupView.Designer.cs">
+    <Compile Include="Views\Setup\SetupView.Designer.cs">
       <DependentUpon>SetupView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ViewType.cs" />
-    <EmbeddedResource Include="Views\MainView.resx">
+    <EmbeddedResource Include="Views\Main\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -112,13 +112,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\OperartionView.resx">
+    <EmbeddedResource Include="Views\Operation\OperartionView.resx">
       <DependentUpon>OperartionView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PositionView.resx">
+    <EmbeddedResource Include="Views\Position\PositionView.resx">
       <DependentUpon>PositionView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SetupView.resx">
+    <EmbeddedResource Include="Views\Setup\SetupView.resx">
       <DependentUpon>SetupView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

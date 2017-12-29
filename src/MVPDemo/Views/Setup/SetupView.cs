@@ -26,7 +26,7 @@ namespace MVPDemo.Views
             InitializeComponent( );
             setupPresenter.SetupView = this;
             _setupPresenter = setupPresenter;
-            btnGoPosition.Click += btnGoPosition_Click;
+            btnGoPositionView.Click += btnGoPosition_Click;
             btnAddCounter.Click += btnAddCounter_Click;
             btnGoOperationView.Click += btnGoOperationView_Click;
             btnExit.Click += btnExit_Click;
