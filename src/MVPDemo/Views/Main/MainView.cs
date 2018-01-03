@@ -27,7 +27,7 @@ namespace MVPDemo.Views
             }
         }
 
-        public bool ToggleTheme => toggleTheme.getUiProperty( x => x.Checked );
+        public bool ToggleTheme => toggleTheme.Checked;
 
         public MainView( IMainPresenter mainPresenter )
         {

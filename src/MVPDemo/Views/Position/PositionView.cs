@@ -11,13 +11,13 @@ namespace MVPDemo.Views
 
         public bool IsEnable
         {
-            get => this.getUiProperty( x => x.Enabled );
+            get => Enabled;
             set => this.updateUi( x => x.Enabled = value );
         }
 
         public string LearnResult
         {
-            get => txtResult.getUiProperty( x => x.Text );
+            get => txtResult.Text;
             set => txtResult.updateUi( x => x.Text = value );
         }
 
